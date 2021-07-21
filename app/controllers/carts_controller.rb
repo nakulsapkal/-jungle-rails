@@ -1,6 +1,11 @@
 class CartsController < ApplicationController
 
   def show
+    # cart = Cart.all()
+    # puts cart
+    # # if cart[product_id] < 1
+    # #   redirect_to :back
+    # # end
   end
 
   def add_item
