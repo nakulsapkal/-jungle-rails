@@ -30,14 +30,14 @@ RSpec.describe Product, type: :model do
     it "should give validation errors if quantity field is empty" do
       subject.quantity = nil
       subject.valid?
-      expect(subject.errors).not_to be_empty
+      expect(subject.errors.full_messages).to include("Quantity can't be blank")
     end
 
 
     it "should give validation errors if category_id is not set" do
       subject.category= nil
       subject.valid?
-      expect(subject.errors).not_to be_empty
+      expect(subject.errors.full_messages).to include("Category can't be blank")
     end
 
 
