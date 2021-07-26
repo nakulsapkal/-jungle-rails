@@ -13,6 +13,32 @@ RSpec.describe Product, type: :model do
       expect(subject.errors).to be_empty
     end
 
+    it "should give validation errors if name field is empty" do
+      subject.name = nil
+      subject.valid?
+      expect(subject.errors).not_to be_empty
+    end
+
+
+    it "should give validation errors if price field is empty" do
+      subject.price_cents = nil
+      subject.valid?
+      expect(subject.errors).not_to be_empty
+    end
+
+
+    it "should give validation errors if quantity field is empty" do
+      subject.quantity = nil
+      subject.valid?
+      expect(subject.errors).not_to be_empty
+    end
+
+
+    it "should give validation errors if category_id is not set" do
+      subject.category= nil
+      subject.valid?
+      expect(subject.errors).not_to be_empty
+    end
 
 
   end
