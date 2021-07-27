@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe User, type: :model do
  let(:user1) {User.new(first_name:"user1_first_name", last_name: "user1_last_name", email: "user1@gmail.com", password: "user1@123", password_confirmation: "user1@123")}
 
-#  let(:user2) {User.new(first_name:"user2_first_name", last_name: "user2_last_name", email: "user2@gmail.com", password: "user2@123", password_confirmation: "user2@123")}
+#  subject {User.new(first_name:"user2_first_name", last_name: "user2_last_name", email: "user2@gmail.com", password: "user2@123", password_confirmation: "user2@123")}
 
 
   describe "Validations" do
@@ -54,9 +54,34 @@ RSpec.describe User, type: :model do
       user2.valid?
       expect(user2.errors.full_messages).to include("Password is too short (minimum is 5 characters)")
     end
+  end
 
+  describe '.authenticate_with_credentials' do
+    # examples for this class method here
+    it "returns user when credentials match" do
+      user1.save
+      user = User.authenticate_with_credentials('user1@gmail.com', 'user1@123')
+      expect(user).not_to be(nil)
+    end
 
+    it "returns nil when credentials do not match" do
+      user1.save
+      user = User.authenticate_with_credentials('user2@gmail.com', 'user2@123')
+      expect(user).to be(nil)
+    end
 
+    it "returns user when email matches but has white spaces before and after" do
+      user1.save
+      user = User.authenticate_with_credentials(' user1@gmail.com ', 'user1@123')
+      expect(user).to be == user
+    end
+
+    it "returns user when credentials match but email provided is in lower and upper case" do
+      user1.save
+      user = User.authenticate_with_credentials('UseR1@Gmail.com', 'user1@123')
+      expect(user).to be == user
+    end
 
   end
+
 end
