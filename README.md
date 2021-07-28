@@ -4,11 +4,11 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 
 ## Final Product
 
-!["screenshot of Home Page"](https://github.com/nakulsapkal/scheduler/blob/final-changes/docs/App%20Main%20Screen.png?raw=true)
-!["screenshot of SignUp Page"](https://github.com/nakulsapkal/scheduler/blob/final-changes/docs/Delete%20Appointment.png?raw=true)
-!["screenshot of Login Cart View(Empty Cart View)"](https://github.com/nakulsapkal/scheduler/blob/final-changes/docs/New%20Appointment%20Form.png?raw=true)
-!["screenshot of Categories List"](https://github.com/nakulsapkal/scheduler/blob/final-changes/docs/Error%20Mode%20For%20Saving%20Appointment.png?raw=true)
-!["screenshot of Admin Dashboard"](https://github.com/nakulsapkal/scheduler/blob/final-changes/docs/Error%20Mode%20For%20Deleting%20Appointment.png?raw=true)
+!["screenshot of Home Page"](https://github.com/nakulsapkal/-jungle-rails/blob/master/docs/Home%20Page.png?raw=true)
+!["screenshot of SignUp Page"](https://github.com/nakulsapkal/-jungle-rails/blob/master/docs/Signup%20Page.png?raw=true)
+!["screenshot of Login Cart View(Empty Cart View)"](<https://github.com/nakulsapkal/-jungle-rails/blob/master/docs/Cart%20View%20(Empty%20Cart%20View).png?raw=true>)
+!["screenshot of Categories List"](https://github.com/nakulsapkal/-jungle-rails/blob/master/docs/Categories%20List%20View.png?raw=true)
+!["screenshot of Admin Dashboard"](https://github.com/nakulsapkal/-jungle-rails/blob/master/docs/Admin%20Dashboard%20View.png?raw=true)
 
 ## Dependencies
 
