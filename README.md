@@ -2,12 +2,19 @@
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
 
-## Additional Steps for Apple M1 Machines
+## Final Product
 
-1. Make sure that you are runnning Ruby 2.6.6 (`ruby -v`)
-1. Install ImageMagick `brew install imagemagick imagemagick@6 --build-from-source`
-2. Remove Gemfile.lock
-3. Replace Gemfile with version provided [here](https://gist.githubusercontent.com/FrancisBourgouin/831795ae12c4704687a0c2496d91a727/raw/ce8e2104f725f43e56650d404169c7b11c33a5c5/Gemfile)
+!["screenshot of Home Page"](https://github.com/nakulsapkal/scheduler/blob/final-changes/docs/App%20Main%20Screen.png?raw=true)
+!["screenshot of SignUp Page"](https://github.com/nakulsapkal/scheduler/blob/final-changes/docs/Delete%20Appointment.png?raw=true)
+!["screenshot of Login Cart View(Empty Cart View)"](https://github.com/nakulsapkal/scheduler/blob/final-changes/docs/New%20Appointment%20Form.png?raw=true)
+!["screenshot of Categories List"](https://github.com/nakulsapkal/scheduler/blob/final-changes/docs/Error%20Mode%20For%20Saving%20Appointment.png?raw=true)
+!["screenshot of Admin Dashboard"](https://github.com/nakulsapkal/scheduler/blob/final-changes/docs/Error%20Mode%20For%20Deleting%20Appointment.png?raw=true)
+
+## Dependencies
+
+- Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
+- PostgreSQL 9.x
+- Stripe
 
 ## Setup
 
@@ -28,6 +35,6 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 
 ## Dependencies
 
-* Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
-* PostgreSQL 9.x
-* Stripe
+- Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
+- PostgreSQL 9.x
+- Stripe
